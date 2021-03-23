@@ -4,6 +4,8 @@ body{
   margin: 0;
   padding: 0;
   font-size: 16pt; 
+  font-family: "Raleway", sans-serif; 
+  background-image:url(/images/concrete_seamless.png)
 }
 
 /*Requirement 2*/
@@ -11,12 +13,19 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+  display: flex;
+  flex-direction:column; 
+  align-items:center; 
 
 }
 
 /*Requirement 3*/
 .nav_links{
   /*Your code here again.*/
+  display: flex;
+  flex-direction:column; 
+  align-items:center; 
+
 }
 
 
@@ -26,7 +35,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center; 
-    flex-direction: column; 
     flex-wrap: wrap; 
     
     /*Your code here*/
@@ -78,30 +86,18 @@ header{
 
 /*Requirement 9*/
 #logo{
-    animation-name:logo_grow;
-   @-webkit-animation:logo_grow;
+    animation-name:movelogo; 
     animation-duration: 15s;
     animation-iteration-count: 1; 
-   /*Your code here.*/
-   @-webkit-animation-duration:15s;
-   @-webkit-animation-iteration-count: 1; 
- 
 }
 
-/*Keyframes for animation*/
-@-webkit-keyframes logo_grow{
-  /*Your code here.*/
-    from{width:25px; opacity: 0;}
-    to {width:430px;opacity: 1;}
 
-}
 
-@keyframes logo_grow{
-  /*Your code here.*/
-    from{width:25px; opacity: 0;}
-    to {width:430px;opacity: 1;}
+@keyframes movelogo{
+    from{width: 25px; opacity: 0;}
+    to {width: 430px; opacity: 1;}
     
-} 
+}
 
 @media screen and (min-width: 850px){
 
@@ -109,7 +105,7 @@ header{
   header{
       align-items: left;
       flex-direction: row;
-      justify-items: space-between; 
+      justify-content: space-between; 
     /*Your code here again.*/  
   }
 
