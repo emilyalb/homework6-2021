@@ -14,8 +14,8 @@ header{
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
   display: flex;
-  flex-direction:column; 
-  align-items:center; 
+  flex-direction:column;  
+  align-items: center; 
 
 }
 
@@ -83,18 +83,18 @@ header{
   margin: 10px;
   width: 300px;
 }
-*/
+
 
 /*Requirement 9*/
 #logo{
-    animation-name:movelogo; 
+    animation-name:move_logo; 
     animation-duration: 15s;
-    animation-iteration-count: 1; 
+    animation-iteration-count:1; 
 }
 
 
 
-@keyframes movelogo{
+@keyframes move_logo{
     from{width: 25px; opacity: 0;}
     to {width: 430px; opacity: 1;}
     
@@ -126,7 +126,12 @@ header{
 }
 
 /*Requirement 12*/
-/*Add media query to handle reduced-motion*/
+@media (prefers-reduced-motion){
+    .movelogo{
+        animation-name: movelogo; 
+    }
+    }
+
 /*Your code here again.*/ 
 
 
@@ -134,11 +139,26 @@ header{
 @media print { 
 
   /*Requirement 13*/
+    background:disabled; 
   /*Requirement 14*/
+    .nav_links
   /*Requirement 15*/
+    .nav_links{
+        width: 100%;
+    }
   /*Requirement 16*/
+    .price{
+        align-content: flex-end;
+    }
   /*Requirement 17*/
+    .package{
+     border:2px solid #45ADAD;
+     flex-basis: 200px;    
+    }
   /*Requirement 18*/
+    .gallery{
+        display: none; 
+    }
  
 }
 
