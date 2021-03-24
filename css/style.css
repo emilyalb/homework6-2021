@@ -57,27 +57,28 @@ header{
 
 /*Requirement 6*/
  
-.package>header {
+.package > header {
   background: #288080;
   border: 2px solid #45ADAD;
   padding: 20px 0;
   border-radius: 7px 7px 0 0;
-}*/
+} 
 
 
 /*Requirement 7*/
 .gallery{
+  min-height: 600px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  display: flex;
-  min-height: 600px;
+ 
   /*Your code here again.*/
 
 }
 
 /*Requirement 8*/
  
-.gallery > img{
+.gallery>img{
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
@@ -105,7 +106,7 @@ header{
   header{
       align-items: left;
       flex-direction: row;
-      justify-content: space-between; 
+      justify-content: space-around; 
     /*Your code here again.*/  
   }
 
