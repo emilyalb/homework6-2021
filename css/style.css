@@ -57,7 +57,7 @@ header{
 
 /*Requirement 6*/
  
-.package > header {
+.package>header {
   background: #288080;
   border: 2px solid #45ADAD;
   padding: 20px 0;
@@ -104,16 +104,27 @@ header{
 
   /*Requirement 10*/
   header{
-      align-items: left;
-      flex-direction: row;
-      justify-content: space-around; 
+  /*Your  code here again.*/
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction:row;  
+  align-items: center; 
+  width:100%; 
+  
+ 
     /*Your code here again.*/  
   }
 
   /*Requirement 10*/
   .nav_links{
-     
-      flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction:row;
+  justify-content: flex-end;
+  align-items: center; 
+  width:auto;
+    }
    
       
     /*Your code here again.*/  
@@ -148,7 +159,7 @@ header{
     }
   /*Requirement 16*/
     .price{
-        align-content: flex-end;
+    align-content: flex-end;
     }
   /*Requirement 17*/
     .package{
