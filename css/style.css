@@ -1,5 +1,7 @@
 /*Begin your code here*/
 /*Requirement 1*/
+
+ 
 body{
   margin: 0;
   padding: 0;
@@ -45,12 +47,13 @@ header{
 
 /*Requirement 5*/
 .package {
+  flex-basis: 400px; 
   margin: 12px;
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
-  flex-basis: 400px; 
   /*Your code here.*/
+ 
   /*Take a look at flex-basis*/
 
 }
@@ -105,12 +108,8 @@ header{
   /*Requirement 10*/
   header{
   /*Your  code here again.*/
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  flex-direction:row;  
-  align-items: center; 
-  width:100%; 
+    align-items: left;
+    flex-direction: row; 
   
  
     /*Your code here again.*/  
@@ -118,22 +117,21 @@ header{
 
   /*Requirement 10*/
   .nav_links{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction:row;
-  justify-content: flex-end;
-  align-items: center; 
-  width:auto;
+    align-items: left;
+    flex-direction: row; 
     }
    
       
     /*Your code here again.*/  
-  }
+  
 
   /*Requirement 11*/
   .package {
-    flex-basis: 230px; 
-  } 
+  flex-basis:250px;
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;} 
 }
 
 /*Requirement 12*/
